@@ -1,0 +1,178 @@
+.btn {
+	width: 166px;
+	height: 17px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	font-family: "Poppins";
+	text-align: center;
+	margin: 10px auto;
+}
+
+
+.big {
+	width: 240px;
+	height: 60px;
+	margin-top: 30px;
+}
+
+.medium {
+	width: 240px;
+	height: 50px;
+}
+
+.small { 
+	width: 240px;
+	height: 40px;
+} 
+
+.color {
+	background-color: #f15201;
+	color: #ffffff;
+}
+
+.stroke {
+	border: 2px solid #f15201;
+}
+
+
+.grey {
+	background-color: #f5f5f5;
+	color: #3a3736;
+}
+
+.dark {
+	border: 2px solid #ffffff;
+	color: #ffffff;
+}
+
+.bckgrnd {
+	width: 320px;
+	height: 270px;
+	background-color: #3a3736;
+	text-align: center;
+}
+
+
+.tabs { 
+	width: 100%; 
+	padding: 0px; 
+	margin: 0 auto;
+}
+
+.tabs > input { 
+	display: none; 
+}
+
+.tabs > div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #e1e0e0;
+    background: #FFFFFF;
+}
+
+.tabs > label {
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 0 -1px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #e1e0e0;
+	border-bottom-color: #FFFFFF;
+    cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	font-family: "Poppins";
+}
+
+.tabs > input:checked + label {
+    color: #feffff;
+    border: 1px solid #f15201;
+    background-color: #f15201;
+}
+
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3 { 
+	display: block;
+}
+
+#txt_1, #txt_2, #txt_3 {
+	padding: 0 40px 50px 40px;
+}
+
+#txt_1 > p, #txt_2 > p, #txt_3 > p {
+	font-size: 20px;
+	line-height: 20px;
+	color: #3a3736;
+	font-weight: 500;
+	font-family: "Fira Sans Condensed";
+	padding: 50px 0 4px 0;
+}
+
+#txt_1 > div, #txt_2 > div, #txt_3 > div {
+	font-size: 16px;
+	line-height: 24px;
+	color: #686665;
+	font-weight: 300;
+	font-family: "Poppins";
+	padding: 0 30px;
+}
+
+button.accordion {
+	background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+	font-size: 20px;
+	line-height: 30px;
+	color: #3a3736;
+	font-weight: 500;
+	font-family: "Fira Sans Condensed";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	font-size: 16px;
+	line-height: 24px;
+	color: #686665;
+	font-weight: 300;
+	font-family: "Poppins";
+	border-left: 2px solid #f15201;
+	margin-left: 40px;
+}
+
+
+ul {
+      list-style: none;
+      margin: 0
+}
+
+ul li{
+       position: relative;
+}
+
+ul li:before {
+    content:  "-";
+    position: absolute;
+    left:     -18px;
+	bottom: 3px;
+	font-size: 40px;
+	line-height: 30px;
+	color: #f15201;
+	font-weight: 500;
+	font-family: "Fira Sans Condensed";
+}
+
+h2 {
+	padding: 20px 0 20px 0;
+}
