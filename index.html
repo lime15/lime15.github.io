@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	<link rel="stylesheet" href="bootstrap.min.css" >
 	<link rel="stylesheet" type="text/css" href="style.css">
-    <title></title>
+    <title>Elements</title>
   </head>
   <body>
 	<div class="container">
@@ -82,56 +82,124 @@
 				</div>
 			</div>
 		</div>
+		
+		
+	
 		<h2>Accordion</h2>
-		<div class="row">
-			<div class="col-6">
-				<ul>
-					<button class="accordion"><li>Can I Use Pavers on a Driveway?</li></button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-
-					<button class="accordion"><li>Can I Install Pavers Myself?</li></button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-
-					<button class="accordion"><li>What is the Base Material made of?</li> </button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-					
-					<button class="accordion"><li>What is Geotextile?</li></button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-				</ul>
-			</div>
-			<div class="col-6">
-				<ul>
-					<button class="accordion"><li>Can I Use Pavers around the Pool? </li></button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-					
-					<button class="accordion"><li>Can I Use Pavers Over Existing Concrete? </li></button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-					
-					<button class="accordion"><li>How Long Do Pavers Last? </li></button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-					
-					<button class="accordion"><li>Are pavers right for my home?</li></button>
-					<div class="panel">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-				</ul>
-			</div>
+		<div id="accordion">
+			<div class="row">
+				<div class="col-6">
+					<ul>
+						
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+								Can I Use Pavers on a Driveway?
+							</a></li>
+						  </div>
+						  <div id="collapseOne" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+							  Can I Install Pavers Myself?
+							</a></li>
+						  </div>
+						  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+							  What is the Base Material made of?
+							</a></li>
+						  </div>
+						  <div id="collapseThree" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+							  What is Geotextile?
+							</a></li>
+						  </div>
+						  <div id="collapseFour" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+					</ul>
+				</div>
+				<div class="col-6">
+					<ul>
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+							  Can I Use Pavers around the Pool?
+							</a></li>
+						  </div>
+						  <div id="collapseFive" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+							  Can I Use Pavers Over Existing Concrete?
+							</a></li>
+						  </div>
+						  <div id="collapseSix" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+							  How Long Do Pavers Last?
+							</a></li>
+						  </div>
+						  <div id="collapseSeven" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header">
+							<li><a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+							  Are pavers right for my home?
+							</a></li>
+						  </div>
+						  <div id="collapseEight" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						  </div>
+						</div>
+						
+					</ul>
+				</div>
+			</div>	
 		</div>
 	</div>
 	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="bootstrap.min.js"></script>
   </body>
 </html>

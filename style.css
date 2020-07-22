@@ -1,29 +1,50 @@
+@media (max-width: 767px) {
+	.btn {
+		min-width: 150px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.btn {
+		min-width: 150px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.btn {
+		min-width: 180px;
+	}
+} 
+
+@media (min-width: 1200px) {
+	.btn {
+		min-width: 180px;
+	}
+}
+
 .btn {
-	width: 166px;
-	height: 17px;
+	max-width: 240px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 300;
 	font-family: "Poppins";
 	text-align: center;
 	margin: 10px auto;
+	padding:
 }
 
 
 .big {
-	width: 240px;
-	height: 60px;
+	min-height: 60px;
 	margin-top: 30px;
 }
 
 .medium {
-	width: 240px;
-	height: 50px;
+	min-height: 50px;
 }
 
 .small { 
-	width: 240px;
-	height: 40px;
+	min-height: 40px;
 } 
 
 .color {
@@ -120,37 +141,34 @@
 	padding: 0 30px;
 }
 
-button.accordion {
-	background-color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-	font-size: 20px;
-	line-height: 30px;
-	color: #3a3736;
-	font-weight: 500;
-	font-family: "Fira Sans Condensed";
+.card {
+	border: none;
 }
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.card-header {
+	cursor: pointer;
+	background-color: #FFFFFF;
+	border-bottom: none;
+	font-family: "Fira Sans Condensed";
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #3a3736;
+}
+
+.card-header > li > a {
+	color: #000000;
+}
+
+.card-body {
 	font-size: 16px;
 	line-height: 24px;
 	color: #686665;
 	font-weight: 300;
-	font-family: "Poppins";
 	border-left: 2px solid #f15201;
 	margin-left: 40px;
+	font-family: "Poppins";
 }
-
 
 ul {
       list-style: none;
@@ -165,7 +183,7 @@ ul li:before {
     content:  "-";
     position: absolute;
     left:     -18px;
-	bottom: 3px;
+	bottom: 0.2px;
 	font-size: 40px;
 	line-height: 30px;
 	color: #f15201;
