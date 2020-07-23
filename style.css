@@ -156,7 +156,7 @@
 	color: #3a3736;
 }
 
-.card-header > li > a {
+.card-header > a {
 	color: #000000;
 }
 
@@ -179,13 +179,9 @@ ul li{
        position: relative;
 }
 
-ul li:before {
+a:before {
     content:  "-";
-    position: absolute;
-    left:     -18px;
-	bottom: 0.2px;
-	font-size: 40px;
-	line-height: 30px;
+	font-size: 30px;
 	color: #f15201;
 	font-weight: 500;
 	font-family: "Fira Sans Condensed";
